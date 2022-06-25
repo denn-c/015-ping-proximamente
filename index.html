@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="asset/icon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Ping próximamente</title>
+  </head>
+  <body>
+    <header class="emcabezado">
+      <img src="asset/images/logo.svg" alt="Logo" class="logo" />
+    </header>
+    <h1 class="titulo">
+      ¡Nosotros estamos lanzando
+      <strong class="titulo__pronto"> pronto!</strong>
+    </h1>
+    <p class="descripcion">Suscríbete y recibe notificaciones</p>
+    <form action="#" class="formulario" novalidate>
+      <div class="formulario__campo">
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="Correo electrónico"
+          class="formulario__entrada"
+        />
+        <label for="correo" class="formulario__validacion"
+          >Por favor proporcione un correo válido</label
+        >
+      </div>
+      <input type="submit" value="Notificarme" class="formulario__enviar" />
+    </form>
+    <img
+      src="asset/images/illustration-dashboard.png"
+      alt="ilustración tabla de estadísticas"
+      class="imagen"
+    />
+    <aside class="redes">
+      <a href="#" class="redes__enlace">
+        <img
+          src="asset/icon/iconos-facebook.svg"
+          alt="Icono de Facebook"
+          class="redes__red"
+        />
+      </a>
+      <a href="#" class="redes__enlace">
+        <img
+          src="asset/icon/iconos-twitter.svg"
+          alt="Icono de Twitter"
+          class="redes__red"
+        />
+      </a>
+      <a href="#" class="redes__enlace">
+        <img
+          src="asset/icon/iconos-instagram.svg"
+          alt="Icono de Instagram"
+          class="redes__red"
+        />
+      </a>
+    </aside>
+    <footer class="pie">
+      <p class="pie__derechos">
+        © Derechos de autor Ping. Reservados todos los derechos.
+      </p>
+    </footer>
+    <script src="js/validaciones.js"></script>
+  </body>
+</html>

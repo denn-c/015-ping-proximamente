@@ -1,0 +1,154 @@
+:root{
+
+--Blue: hsl(223, 87%, 63%);
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+.logo{
+  margin: 1em auto;
+}
+.titulo,
+.descripcion{
+  text-align: center;
+}
+
+
+.titulo{
+  font-weight: 300;
+  color: var(--Gray);
+  margin-bottom: 0;
+}
+.titulo__pronto{
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+.descripcion{
+  color: var(--Very-Dark-Blue);
+}
+.formulario,
+.formulario__campo{
+  display: flex;
+}
+
+.formulario{
+  justify-content: center;
+}
+.formulario__campo{
+  flex-direction: column;
+  width: 28%;
+  min-width: 15em;
+}
+
+.formulario__entrada,
+.formulario__enviar{
+  height: 3rem;
+  border-radius: 2em;
+  margin: 0 .5em;
+}
+
+.formulario__entrada{
+  border: 1px solid var(--Gray);
+  font-size: 1rem;
+  padding-left: 1em;
+  color: var(--Very-Dark-Blue);
+}
+.formulario__entrada::placeholder{
+  color: auto;
+}
+
+.formulario__validacion{
+  font-size: .85rem;
+  color: var(--Light-Red);
+  font-style: italic;
+  margin-left: 2em;
+  margin-top: .7em;
+  visibility: hidden;
+}
+
+.formulario--activo .formulario__validacion{
+  visibility: visible;
+}
+.formulario--activo .formulario__entrada{
+  border-color: var(--Light-Red);
+}
+.formulario--activo .formulario__entrada::placeholder{
+  color: var(--Very-Dark-Blue);
+}
+
+.formulario__enviar{
+  border: none;
+  background-color: var(--Blue);
+  color: var(--Pale-Blue);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 3em;
+  cursor: pointer;
+}
+.formulario__enviar:hover{
+opacity: .8;
+}
+.imagen{
+  max-width: 28em;
+  margin: 1em auto;
+  width: 100%;
+
+}
+.redes{
+  display: flex;
+  justify-content: center;
+}
+.redes__enlace{
+  margin: .5em;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redes__enlace:hover{
+  background-color: var(--Blue);
+
+
+}
+.redes__enlace:hover > .redes__red{
+  filter: brightness(500%);
+}
+
+.pie__derechos{
+  text-align: center;
+  font-size: .5em;
+  color: var(--Gray);
+}
+
+@media (max-width:500px) {
+  .titulo{
+    font-size: 1.3rem;
+  }
+  .descripcion{
+    font-size: 1rem;
+  }
+
+  .formulario{
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .formulario__campo{
+    width: 100%;
+    min-width: auto;
+  }
+  .imagen{
+    max-width: auto;
+    padding: 1em;
+    width: 100%;
+  }
+}
